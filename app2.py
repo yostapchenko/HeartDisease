@@ -22,7 +22,7 @@ def main():
     prediction = st.container()
 
     # Image for the app
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Heart_anterior_exterior_view.png/640px-Heart_anterior_exterior_view.png")
+    st.image("https://ocdn.eu/pulscms-transforms/1/fwtk9kqTURBXy9jZjI2ZjM5N2M1NGVlZjhhZDgwYWY4ZWVjYzQ1YTExNS5qcGVnkpUDAMx0zQLuzQGmkwXNAwLNAZDeAAGhMAU")
 
     # Overview section
     with overview:
