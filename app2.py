@@ -22,11 +22,11 @@ def main():
     prediction = st.container()
 
     # Image for the app
-    st.image("https://ocdn.eu/pulscms-transforms/1/fwtk9kqTURBXy9jZjI2ZjM5N2M1NGVlZjhhZDgwYWY4ZWVjYzQ1YTExNS5qcGVnkpUDAMx0zQLuzQGmkwXNAwLNAZDeAAGhMAU")
+    st.image("https://leksykon.com.pl/image?name=images/ekg22.jpg&width=750&height=350")
 
     # Overview section
     with overview:
-        st.title("Heart Disease Prediction Application")
+        st.title("Heart Disease Prediction App")
 
     # Input section in the left column
     with left:
