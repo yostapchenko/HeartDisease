@@ -14,7 +14,7 @@ st_slope_d = {0: "Up", 1: "Flat", 2: "Down"}
 
 def main():
     # Configure the Streamlit app page
-    st.set_page_config(page_title="Heart Disease Prediction")
+    st.set_page_config(page_title="Heart Disease Prediction App")
 
     # Layout containers
     overview = st.container()
@@ -32,9 +32,9 @@ def main():
     with left:
         # Radio buttons for categorical variables
         sex_radio = st.radio("Płeć", list(sex_d.keys()), format_func=lambda x: sex_d[x])
-        chest_pain_radio = st.radio("Typ Bólu w Klatce Piersiowej", list(chest_pain_d.keys()), format_func=lambda x: chest_pain_d[x])
-        resting_ecg_radio = st.radio("Wynik EKG", list(resting_ecg_d.keys()), format_func=lambda x: resting_ecg_d[x])
-        st_slope_radio = st.radio("Nachylenie ST", list(st_slope_d.keys()), format_func=lambda x: st_slope_d[x])
+        chest_pain_radio = st.radio("Ból w Klatce Piersiowej", list(chest_pain_d.keys()), format_func=lambda x: chest_pain_d[x])
+        resting_ecg_radio = st.radio("EKG", list(resting_ecg_d.keys()), format_func=lambda x: resting_ecg_d[x])
+        st_slope_radio = st.radio("ST Slope", list(st_slope_d.keys()), format_func=lambda x: st_slope_d[x])
 
     # Input section in the right column
     with right:
@@ -43,7 +43,7 @@ def main():
         resting_bp_slider = st.slider("Spoczynkowe Ciśnienie Krwi", min_value=80, max_value=200, value=120)
         cholesterol_slider = st.slider("Poziom Cholesterolu", min_value=100, max_value=400, value=200)
         max_hr_slider = st.slider("Maksymalne Tętno", min_value=60, max_value=220, value=150)
-        exercise_angina_radio = st.radio("Angina Podczas Ćwiczeń", [0, 1], format_func=lambda x: "Tak" if x == 1 else "Nie")
+        exercise_angina_radio = st.radio("Dławica piersiowa", [0, 1], format_func=lambda x: "Tak" if x == 1 else "Nie")
 
     # Prediction section
     with prediction:
